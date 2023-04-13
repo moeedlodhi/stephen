@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path
-from authentication import views
+from main_app import views
 from rest_framework_jwt.views import refresh_jwt_token
 
 urlpatterns = [

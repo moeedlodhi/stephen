@@ -3,4 +3,4 @@ ignore = E226, E266, W503, W504, E127
 max-line-length = 120
 max-complexity = 10
 
-exclude = config/settings.py, authentication/migrations/*
+exclude = config/settings.py, main_app/migrations/*

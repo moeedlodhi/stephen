@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt'
 ]
 
-LOCAL_APPS = ['authentication']
+LOCAL_APPS = ['main_app']
 
 INSTALLED_APPS = INSTALLED_APPS + LOCAL_APPS
 

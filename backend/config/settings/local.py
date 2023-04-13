@@ -58,7 +58,7 @@ INSTALLED_APPS = [
 ]
 CORS_ORIGIN_ALLOW_ALL = True
 
-LOCAL_APPS = ['authentication']
+LOCAL_APPS = ['main_app']
 
 INSTALLED_APPS = INSTALLED_APPS + LOCAL_APPS
 
