@@ -8,7 +8,6 @@ def create_temp_file(encoded_file):
         temp_file.write(decoded_data)
 
         # print path of temporary file
-        print(temp_file.name)
         return temp_file
 
 def encode_audio_file(audio_file):
