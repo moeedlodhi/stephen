@@ -4,6 +4,7 @@ from django.db import transaction
 import requests
 from celery import shared_task
 from time import sleep
+from .models import Notifications
 
 
 
@@ -37,6 +38,7 @@ def long_running_task(data):
             r3 = requests.post(f"{settings.HOST}/wrapper/mock_api", files=audio_file)
             if r3.status_code != 201:
                 raise Exception('failure')
-            return True
+            Notifications.objects.create(message="put message here", is_read=False)
+            return (r1, r2, r3)
         except Exception as e:
             raise Exception(str(e))
